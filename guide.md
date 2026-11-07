@@ -14,7 +14,7 @@ Check it is running:
 
 ```bash
 curl localhost:9200
-curl localhost:9200/_cluster/health?pretty
+curl 'localhost:9200/_cluster/health?pretty'
 ```
 
 - Elasticsearch: http://localhost:9200
@@ -164,9 +164,9 @@ curl -X DELETE localhost:9200/products
 ## Useful Admin Endpoints
 
 ```bash
-curl localhost:9200/_cat/indices?v          # list indices
-curl localhost:9200/_cat/health?v           # cluster health
-curl localhost:9200/products/_mapping?pretty
+curl 'localhost:9200/_cat/indices?v'          # list indices
+curl 'localhost:9200/_cat/health?v'           # cluster health
+curl 'localhost:9200/products/_mapping?pretty'
 curl localhost:9200/products/_count
 ```
 
